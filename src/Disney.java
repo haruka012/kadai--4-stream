@@ -3,12 +3,14 @@ public class Disney{
 
     private int birthday;
 
-    public Disney(String name,int birthday){
+    public Disney(String name,int birthday) {
         this.name = name;
         this.birthday = birthday;
 
     }
+    public String getName(){ return name;}
 
-    public void contains(){}
+    public int getBirthday() { return birthday;}
+
 
 }
