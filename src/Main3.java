@@ -10,8 +10,7 @@ public class Main3 {
 
         List<Disney> disneyList = List.of(pooh,piglet,tigger,eeyore);
 
-        List<Disney> names = disneyList.stream().filter( disneyCharacter -> disneyCharacter.toString().contains("p")).toList();
+        List<Disney> names = disneyList.stream().filter( disneyCharacter -> disneyCharacter.getName().toString().contains("P")).toList();
         System.out.println(names);
-
     }
 }
