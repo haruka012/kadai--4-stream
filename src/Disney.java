@@ -1,14 +1,15 @@
+import java.time.LocalDate;
+
 public class Disney{
     private String name;
 
-    private int birthday;
+    private LocalDate birthday;
 
-    public Disney(String name,int birthday){
+    public Disney(String name, LocalDate birthday) {
         this.name = name;
         this.birthday = birthday;
-
     }
+    public String getName(){ return name;}
 
-    public void contains(){}
-
+    public LocalDate getBirthday() { return birthday;}
 }
