@@ -8,8 +8,9 @@ public class Main3 {
         Disney piglet = new Disney("Piglet", LocalDate.of(1968,12,20));
         Disney tigger = new Disney("Tigger", LocalDate.of(1968,12,20));
         Disney eeyore = new Disney("Eeyore", LocalDate.of(1966,2,4));
+        Disney rabbit = new Disney("Rabbit",LocalDate.of(1996,2,4));
 
-        List<Disney> disneyList = List.of(pooh, piglet, tigger, eeyore);
+        List<Disney> disneyList = List.of(pooh, piglet, tigger, eeyore,rabbit);
 
         List<Disney> filteredDisneyCharacter = disneyList.stream().filter(disneyCharacter -> disneyCharacter.getName().contains("P")).toList();
         System.out.println(filteredDisneyCharacter);
